@@ -22,24 +22,27 @@ const Text = styled.p`
   text-align: center;
 `
 
-function LoginPage() {
+function SignupPage() {
   return (
     <ImageWithSpace>
       <H1># Social Dev</H1>
       <H4>All the latest in the dev world, right here!</H4>
       <FormContainer>
-        <H2>Log in to your account.</H2>
+        <H2>Create your account.</H2>
         <Form>
-          <Input label="User or E-mail" type="email"></Input>
+          <Input label="Name" />
+          <Input label="Last Name" />
+          <Input label="Username" />
+          <Input label="Username or e-mail" type="email"></Input>
           <Input label="Password" type="password"></Input>
           <Button>Login</Button>
         </Form>
         <Text>
-          Don't have an account? <Link href="/signup">Sign up here!</Link>
+          Already have an account? <Link href="/login">Log in.</Link>
         </Text>
       </FormContainer>
     </ImageWithSpace>
   )
 }
 
-export default LoginPage
+export default SignupPage
