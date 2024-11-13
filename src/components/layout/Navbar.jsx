@@ -6,6 +6,11 @@ const StyledNavbar = styled.div`
   display: flex;
   align-items: center;
   padding: 0 100px;
+  margin-bottom: 50px;
+
+  @media (max-width: 500px) {
+    padding: 0 20px;
+  }
 `
 
 const StyledLogo = styled.span`
@@ -19,7 +24,7 @@ function Navbar() {
     <StyledNavbar>
       <StyledLogo># Social Dev</StyledLogo>
       <div>
-        <a href="#">Logo out</a>
+        <a href="#">Log out</a>
       </div>
     </StyledNavbar>
   )
