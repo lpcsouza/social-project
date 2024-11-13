@@ -1,4 +1,4 @@
-export const signupUser = () => {
-  console.log("Signup User")
+export const signupUser = (body) => {
+  console.log(body)
   return true
 }
